@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nabar{
+    z-index: 999999999;
+    position: fixed;
+    background-color: transparent;
+}
+/* .bg{
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    position: absolute;
+} */
+.image-1 {
+    background-color: #F0F8FF;
+    background-size: cover;
+    width: 100%;
+    z-index:-111111;
+    position: relative;
+
+
+
+}
+
+.font5 {
+    z-index:-11111;
+    position: fixed;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 100px;
+
+   
+    
+
+}
+
+.img5 {
+   
+    z-index:11;
+    position: absolute;
+
+}
+.ffa{
+    z-index:11111111;
+    position: relative;
+    background-color: #F0F8FF;
+}
+
+
+
+
+.image-2 {
+    background-image: url("./image/azin-javadzadeh-Ow4ijRO4ZJw-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image-3 {
+    background-image: url("./image/john-peters-EbOaaL8E_Z0-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.con{
+    z-index: 999999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    background-color: rgb(86, 95, 209);
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+.back1 {
+    background-color: rgb(255, 255, 255);font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.font {
+    font-size: 110px;
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para {
+    margin-top: 50px;
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.saman {
+    margin-top: 100px;
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
