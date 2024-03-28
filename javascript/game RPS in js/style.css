@@ -1,0 +1,49 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    margin-top: 100px ;
+}
+
+.card{
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fs1{
+    font-weight: 600;
+    font-size: 50px;
+    color:  #7d2ae8;
+}
+
+.fs2{
+    font-weight: 600;
+    font-size: 20px;
+    color:  #000000;
+}
+
+.img1{
+    column-gap: 14rem;
+}
+
+.img_r_rotated img{
+    transform:rotate(90deg);
+}
+
+.img_l_rotated img{
+    transform:rotate(-90deg);
+}
+
+.imghover{
+    opacity: 0.5;
+}
+
+.imghover:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+

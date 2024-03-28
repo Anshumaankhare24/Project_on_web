@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#banner{
+    background-color: #493db2 ;
+}
+
+#banner2{
+    background-color: #ffffff ;
+}
+.peraSize{
+    font-size: 50px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 10%;
+    margin-left: 60%;
+}

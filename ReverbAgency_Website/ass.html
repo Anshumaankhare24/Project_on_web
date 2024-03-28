@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+        cursor: url("./assets/image/csaasc.png"), default;
+
+    }
+
+    .custom-cursor {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #3498db;
+      border-radius: 50%;
+      pointer-events: none; /* Allow interactions to pass through the cursor */
+    }
+
+    .custom-cursor::before {
+      content: attr(data-tooltip);
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      padding: 5px;
+      border-radius: 3px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .custom-cursor:hover::before {
+      opacity: 1;
+    }
+  </style>
+  <title>Tooltip in Cursor</title>
+</head>
+<body>
+
+<div class="custom-cursor" data-tooltip="Tooltip Text"></div>
+
+<!-- Your content goes here -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const customCursor = document.querySelector('.custom-cursor');
+
+    document.addEventListener('mousemove', function(event) {
+      const tooltip = customCursor.querySelector('::before');
+      customCursor.style.top = event.pageY + 'px';
+      customCursor.style.left = event.pageX + 'px';
+      tooltip.style.top = event.pageY + 20 + 'px';
+      tooltip.style.left = event.pageX + 20 + 'px';
+    });
+  });
+</script>
+
+</body>
+</html>

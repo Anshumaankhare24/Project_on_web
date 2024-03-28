@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* navbar */
+.navb{
+    z-index: 9999999;
+    position: absolute;
+}
+
+/* Section 1 */
+
+.bgs1{
+    height: 100vh;
+    background-image: url("./img/img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover;
+}
+
+/* .img3{
+    
+   font-weight: 3400;
+} */
+
+.mar{
+    padding-top: 170px;
+}
+
+.bun{
+    font-size: 15px;
+}
+.bun:hover{
+    font-weight: 600;
+}
+
+
+/* section - 4 */
+
+.bgs4{
+    background-color: #d9dbc9;
+}
+.mar1{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* section - 6 */
+
+.bgs6{
+    height: 100vh;
+    background-image: url("./img/L1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.mar2{
+    padding-top: 230px;
+}
+
+/* section 7 */
+
+.bgs7{
+    background-color: black;
+    margin-bottom: 150px;
+}
+
+.fn{
+    font-size: 18px;
+}
+
+
+/* section 8 */
+
+.index{
+    z-index: -99999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

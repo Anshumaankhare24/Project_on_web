@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+.background{
+    background-image: url("../image/bgimg.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.background1{
+    background-image: url("../image/aaa.png");
+    height: 101vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.logo{
+    height: 300px;
+    width: 400px;
+    filter: brightness(100%);
+}
+.image{
+    height: 350px;
+    width: 500px;
+}
+.mp4v{
+    height: 600px;
+    border: none;
+
+}
+
+.font1{
+    font-size:50px;
+    font-weight:600 ;
+    color: aliceblue;
+
+}
+.font2{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 600;
+}
+.font3{
+    font-size:50px;
+    font-weight:600 ;
+    color: aliceblue;
+
+}
+.font4{
+    font-size:20px;
+    font-weight:400 ;
+    color: aliceblue;
+
+}
+.font5{
+    font-size:40px;
+    font-weight:400 ;
+    color: aliceblue;
+
+}
+.font6{
+    font-weight:400 ;
+    color: aliceblue;
+
+}
+.font7{
+    font-weight:600 ;
+    color: aliceblue;
+
+}
+
+.cardimg{
+    width: 18rem;
+    
+    
+}
+
+
+.spac2{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.spac3{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.spac4{
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+
+
+.but1{
+    width: 200px;
+    background: linear-gradient(to bottom left , #40ff00 0%, #c8ff00 100%);
+}
+
+#bttn{
+    background: linear-gradient(to bottom left , #40ff00 0%, #c8ff00 100%);
+
+}
+
+.border1{
+    border-style: solid;
+    padding-top: 5px;
+    border-width: 5px;
+    border-radius: 30px;
+}

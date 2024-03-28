@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+
+    font-style: normal;
+}
+.navbar{
+    height: 100px;
+}
+
+.img1 {
+    height: 20%;
+}
+
+.bg {
+    background-image: url("./daniel-romero-6V5vTuoeCZg-unsplash.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.font1 {
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+
+.font3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+
+.font2 {
+    font-size: 60px;
+    /* font-weight: 300; */
+
+
+}
+
+.roundcirclecursor {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    margin-bottom: -30%;
+    z-index: 200;
+    position: absolute;
+    border: 1px solid transparent;
+}
+
+.roundcirclecursor:hover {
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 700px) {
+    .section2 {
+        height: 70vh;
+        margin-top: -10%;
+    }
+    
+    .roundcirclecursor {
+        margin-bottom: -5%;
+    }
+    
+    .roundcirclecursor img {
+        width: 35px;
+    }
+}

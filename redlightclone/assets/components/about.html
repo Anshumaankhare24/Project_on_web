@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="jquery-3.7.1.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../style/about.css">
+  <script>
+
+    $(document).ready(function () {
+      $(".cardhide").hide(0),
+        $(".cardhide1").slideDown(1000);
+      $("#cardshow1").click(function () {
+        $(".cardhide").hide(0),
+          $(".cardhide1").slideDown(1000);
+      });
+      $("#cardshow2").click(function () {
+        $(".cardhide").hide(0),
+          $(".cardhide2").slideDown(1000);
+      });
+      $("#cardshow3").click(function () {
+        $(".cardhide").hide(0),
+          $(".cardhide3").slideDown(1000);
+      });
+      $("#cardshow4").click(function () {
+        $(".cardhide").hide(0),
+          $(".cardhide4").slideDown(1000);
+      }); $("#cardshow5").click(function () {
+        $(".cardhide").hide(0),
+          $(".cardhide5").slideDown(1000);
+      }); $("#cardshow6").click(function () {
+        $(".cardhide").hide(0),
+          $(".cardhide6").slideDown(1000);
+      });
+    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const follower = document.getElementById("follower");
+
+      document.addEventListener("mousemove", function (event) {
+        // Update the position of the follower element based on the cursor position
+        const x = event.pageX - follower.offsetWidth / 2;
+        const y = event.pageY - follower.offsetHeight / 2;
+        follower.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    });
+    
+
+
+    window.addEventListener('scroll', function() {
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+
+
+
+  gsap.registerPlugin(ScrollTrigger);
+// REVEAL //
+gsap.utils.toArray(".revealUp").forEach(function (elem) {
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top 80%",
+    end: "bottom 20%",
+    markers: true,
+    onEnter: function () {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeave: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    },
+    onEnterBack: function () {
+      gsap.fromTo(
+        elem,
+        { y: -100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeaveBack: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    }
+  });
+});
+
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="follower"></div>
+  
+  <header>
+    <div class="navbar navbar-expand-lg nb1">
+      <a href="#" class=" logo">RedLight<<span>></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a class="revealUp" href="#">Work</a></li>
+          <li class="nav-item"><a class="revealUp" href="#">Careers</a></li>
+          <li class="nav-item"><a class="revealUp" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+    </header>
+  <!-- red color section -->
+  <section class="section1">
+    <div class="container-fluid col p-md-5">
+      <div class="row justify-content-end pt-5">
+        <div class="col-md-5 display-4 lh-1 text-white mt-5 pt-5">
+          The true secret of our success lies in people behind the screen.
+          <br />
+          And<br />
+          with them, our culture.
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid p-md-5">
+      <ul>
+        <li class="display-1 fw-medium m-4">About</li>
+      </ul>
+      <img src="./imag/about.jpg" class="img-fluid" alt="about" width="100%" />
+    </div>
+
+    <!-- column-1 -->
+    <div class="container col p-5 text-light">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 fs-1 lh-sm m-md-5 mb-5">
+          We are a software development studio focusing on seamless
+          communication and process transparency.
+        </div>
+        <!-- column-2 -->
+        <div class="col-md-6">
+          <div class="d-flex">
+            <div class="col-sm-2 me-3 mt-1 text-dark text-end">
+              <small>WHO</small>
+            </div>
+
+            <div class="col">
+              <div class="row fs-3 mb-5">
+                <small>
+                  We are a group of people who think digitally and take daily
+                  showers of light in sunny Portugal. We started out in
+                  Coimbra, but we have clients all around the world.</small>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="col-sm-2 me-3 mt-1 text-dark text-end">
+              <small>MISSION</small>
+            </div>
+
+            <div class="col">
+              <div class="row fs-3 mb-5">
+                <small>Help companies create successful software products in a
+                  collaborative relationship.</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="col-sm-2 me-3 mt-1 text-dark text-end"></div>
+
+            <div class="col">
+              <div class="row mb-5">
+                <img src="./imag/about2.jpg" alt="process" width="100%" size="cover" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="col-sm-2 me-3 mt-1 text-dark text-end">
+              <small>HOW</small>
+            </div>
+
+            <div class="col">
+              <div class="row fs-3 mb-5">
+                <small>
+                  Our process relies heavily on a constant stream of
+                  communication between our team and our clients, always
+                  maintaining clear expectations.</small>
+              </div>
+            </div>
+          </div>
+          <!-- column-2 close -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-8 p-5">
+      <div class="row display-1 fw-medium lh-sm text-start text-light mb-5 pb-5">
+        We strive for closeness and transparency.
+      </div>
+    </div>
+  </section>
+
+  <section class="section2">
+    <!-- white color section -->
+
+    <div class="container-fluid">
+      <!-- card between the two sections -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 offset-sm-1  card-over">
+            <h2 class="p-5 pb-0">How we do it and what makes us</h2>
+            <p class="px-5"><strong> different.</strong></p>
+
+            <div class="card">
+              <div class="card-header bg-light">
+                <div class="btn text-danger fw-medium" id="cardshow1">
+                  Transparency
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header bg-light">
+                <div class="btn text-danger fw-medium" id="cardshow2">
+                  Communication
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header bg-light">
+                <div class="btn text-danger fw-medium" id="cardshow3">
+                  Expertise
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header bg-light">
+                <div class="btn text-danger fw-medium" id="cardshow4">
+                  From Start to Stardom
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header bg-light">
+                <div class="btn text-danger fw-medium" id="cardshow5">
+                  Our Community
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header bg-light">
+                <div class="btn text-danger fw-medium" id="cardshow6">
+                  You're in Good Company
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 p-5 mt-5">
+            <!-- 1st topic -->
+            <div>
+              <div class="card-body cardhide cardhide1">
+                <div class="col-md-8 m-auto lh-sm">
+                  <div class="row h2 mb-4">Fully Transparent process.</div>
+                  <div class="row fs-5">
+                    One of the reasons for our success is how we bring the
+                    client into our processes: whether getting a quote for your
+                    project or seeing your product come to life.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2nd topic -->
+            <div>
+              <div class="card-body cardhide cardhide2">
+                <div class="col-md-8 m-auto lh-sm">
+                  <div class="row h2 mb-4">Crystal clear information and managed expectations</div>
+                  <div class="row fs-5">
+                    Most software projects fail due to poor communication. At Red€light we focu on making sure that all
+                    interactions are crystal clear for everyone,accurate status is known by all, and expectaions are
+                    managed at all times.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3rd topic -->
+            <div>
+              <div class="card-body cardhide cardhide3">
+                <div class="col-md-8 m-auto lh-sm">
+                  <div class="row h2 mb-4">Developing software since 2011.</div>
+                  <div class="row fs-5">
+                    Our engineering team is experiend in JavaScript and Ruby , among others, and can provide the
+                    solutions
+                    you are looking for.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4th topic -->
+            <div>
+              <div class="card-body cardhide cardhide4">
+                <div class="col-md-8 m-auto lh-sm">
+                  <div class="row h2 mb-4">We go from Business Analysis to Business Success.</div>
+                  <div class="row fs-5">
+                    There are many comparisons able to execute your project.At RedLight we strive for more with deep
+                    business analysis and a complete design reivies that will help you far more than you expect.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5th topic -->
+            <div>
+              <div class="card-body cardhide cardhide5">
+                <div class="col-md-8 m-auto lh-sm">
+                  <div class="row h2 mb-4">We're at the center of ourlocal tech community.</div>
+                  <div class="row fs-5">nest Collective, RedLight is able to partner woth manu incredible companies that
+                    can help us help you.
+                    Being a foundin member of
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- 6th topic -->
+            <div>
+              <div class="card-body cardhide cardhide6">
+                <div class="col-md-8 m-auto lh-sm">
+                  <div class="row h2 mb-4">From corporate clients ro shiny startups.</div>
+                  <div class="row fs-5">
+                    Our diverse portfolio shows a track record that we're proud of 4 out 5 new customers are referred to
+                    us by a previous one - that's how satisfied our clients are after working with us.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row p-5">
+        <div class="col-md-6 offset-md-2 fs-1 fw-semibold text-danger">
+          We think and speak JavaScript, ruby or any language you really need.
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid ">
+        <div class="row imgicon d-flex justify-content-evenly flex-wrap">
+          <img src="./imag/rails.svg" alt="rails" class="img-fluid" />
+          <img src="./imag/node.svg" alt="node" class="img-fluid" />
+          <img src="./imag/react.svg" alt="react" class="img-fluid" />
+          <img src="./imag/NET.svg" alt="net" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="scroll-container container-fluid mt-5 mb-5">
+      <img src="https://redlight.dev/wp-content/uploads/fly-images/349/redlight-studio-05-1000x1000.jpg"
+        alt="Cinque Terre" width="auto" height="550" />
+      <img src="https://redlight.dev/wp-content/uploads/fly-images/344/redlight-studio-01-1000x1000.jpg" alt="Forest"
+        width="auto" height="550" />
+      <img src="https://redlight.dev/wp-content/uploads/fly-images/350/redlight-studio-06-1000x1000.jpg"
+        alt="Northern Lights" width="auto" height="550" />
+      <img src="https://redlight.dev/wp-content/uploads/fly-images/349/redlight-studio-05-1000x1000.jpg" alt="Mountains"
+        width="auto" height="550" />
+    </div>
+
+
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-6 display-3 lh-1 offset-md-2">
+          From product specification and early design concepts to product launch
+          and maintenance.
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 offset-md-4 text-danger lh-1 fs-3 p-5">
+          <small>Our process is fully transparent, as we bring clients close to us
+            with daily interactions and updates.</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 card section -->
+    <div class="container-fluid">
+      <div class="row fourcards">
+        <div class=" col-md-6 col-lg-3">
+          <div class="container mt-3">
+            <div class="card pt-5" style="width:100%">
+              <img class="card-img-top m-4 pt-5" src="./imag/card1.webp" alt="Card image" style="width:19%;">
+              <div class="card-body">
+                <h4 class="card-title">Business Analysis</h4>
+                <p class="card-text">We help our clients envision the products they need through good advisory service
+                  and
+                  prioritization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="container mt-3">
+            <div class="card pt-5" style="width:100%">
+              <img class="card-img-top m-4 pt-5" src="./imag/card2.webp" alt="Card image" style="width:20%">
+              <div class="card-body">
+                <h4 class="card-title">Business Analysis</h4>
+                <p class="card-text">We help our clients envision the products they need through good advisory service
+                  and
+                  prioritization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="container mt-3">
+            <div class="card pt-5" style="width:100%">
+              <img class="card-img-top m-4 pt-5" src="./imag/card3.webp" alt="Card image" style="width:36%">
+              <div class="card-body">
+                <h4 class="card-title">Business Analysis</h4>
+                <p class="card-text">We help our clients envision the products they need through good advisory service
+                  and
+                  prioritization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="container mt-3">
+            <div class="card pt-5" style="width:100%">
+              <img class="card-img-top m-4 pt-5" src="./imag/card4.webp" alt="Card image" style="width:27%">
+              <div class="card-body">
+                <h4 class="card-title">Business Analysis</h4>
+                <p class="card-text">We help our clients envision the products they need through good advisory service
+                  and
+                  prioritization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section1 pt-5">
+    <div class="container-fluid col p-md-5">
+      <div class="row pt-5">
+        <div class="col-md-6 display-4 lh-1 text-white fw-medium m-auto mt-5 p-3">
+          18 guys and 3 girls & a
+          whole lot of creativity and
+          software nerdiness.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 fs-3 m-auto mt-0 p-3 pt-0">
+          Oh! We also have a whisky collection for crazy deadlines!
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 card row1 -->
+    <div class="container cc">
+      <div class="row justify-content-start">
+        <div class="col-md-6 col-lg-4 p-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag1.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 p-5 mt-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag2.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 p-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag3.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <!-- 3 card row 2 -->
+        <div class="col-md-6 col-lg-4 p-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag4.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4 p-3 ">
+          <div class="row">
+            <div class="container p-4 text-light fs-5">
+              We are bikers and runners, ninjas and music lovers and... we love red as much as good clients.
+              We are home of creative thinkers, project strategists and digital illusionists.
+              We are problem solvers, geeks but real people that make stuff happen and clients happy.
+            </div>
+          </div>
+          <div class="row">
+            <div class="container mt-3 p-5">
+              <div class="card" style="width:100%">
+                <img class="card-img-top img-fluid" src="./imag/imag5.webp" alt="Card image" style="width:100%;">
+              </div>
+             <div class="col m-3 mt-0">
+              <div class="cardover p-3" style="width:80%">
+                <h4 class="card-title">Business Analysis</h4>
+                <p class="card-text">We help our clients envision the products they need through good advisory service
+                  and
+                  prioritization.</p>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 p-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag6.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <!-- 3 card row3 -->
+        <div class="col-md-6 col-lg-4 p-5 mt-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag7.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 p-5">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag8.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 p-5 mt-3">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag9.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <!-- 3 card row 4 -->
+        
+        <div class="col-md-6 col-lg-4 p-5 mt-3">
+          <div class="container mt-3">
+            <div class="card" style="width:100%">
+              <img class="card-img-top img-fluid" src="./imag/imag10.webp" alt="Card image" style="width:100%;">
+            </div>
+           <div class="col m-3 mt-0">
+            <div class="cardover p-3" style="width:80%">
+              <h4 class="card-title">Business Analysis</h4>
+              <p class="card-text">We help our clients envision the products they need through good advisory service
+                and
+                prioritization.</p>
+            </div>
+           </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    
+
+   
+  </section>
+  <div class="con3 w-100">
+
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="row ">
+        <div class="col-md">
+          <p class="mg3">Join Us</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mg4">
+      <div class="row">
+        <div class="col-sm">
+          <p>Made by AK47 YO</p>
+        </div>
+        <div class="col d-flex justify-content-between">
+          <div class="row">
+          <div class="col"><i class="bi bi-twitter "></i></div>
+          <div class="col"> <i class="bi bi-facebook"></i></div>
+          <div class="col"> <i class="bi bi-linkedin"></i></div>
+          <div class="col"><i class="bi bi-medium"></i></div>
+        </div>
+        </div>
+        <div class="col-sm ">
+          <p>Privacy Policy</p>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <script>
+    AOS.init();
+  </script>
+  <!-- script for image grabbibg and sliding -->
+  <script>
+    const scrollContainer = document.querySelector(".scroll-container");
+    let isMouseDown = false;
+    let startX, scrollLeft;
+
+    scrollContainer.addEventListener("mousedown", (e) => {
+      isMouseDown = true;
+      startX = e.pageX - scrollContainer.offsetLeft;
+      scrollLeft = scrollContainer.scrollLeft;
+      scrollContainer.classList.add("grabbing");
+    });
+
+    scrollContainer.addEventListener("mouseup", () => {
+      isMouseDown = false;
+      scrollContainer.classList.remove("grabbing");
+    });
+
+    scrollContainer.addEventListener("mouseleave", () => {
+      isMouseDown = false;
+      scrollContainer.classList.remove("grabbing");
+    });
+
+    scrollContainer.addEventListener("mousemove", (e) => {
+      if (!isMouseDown) return;
+      e.preventDefault();
+      const x = e.pageX - scrollContainer.offsetLeft;
+      const walk = (x - startX) * 3; // Adjust multiplier for sensitivity
+      scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+</body>
+
+</html>

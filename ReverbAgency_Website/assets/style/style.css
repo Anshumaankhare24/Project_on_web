@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "GRAD" 0;
+}
+
+body {
+    cursor: url("../image/csaasc.png"), default;
+   
+}
+
+.nav_bar{
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+.top{
+    margin-top: 140px;
+}
+.top2{
+    margin-top: 150px;
+}
+.img1{
+    width: 900px;
+}
+.tab{
+    width: 100px;
+}

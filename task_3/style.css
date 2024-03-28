@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* contaner-1 */
+.font1{
+    font-size: 14px;
+}
+
+.font2{
+    color: #fd8549;
+    font-size: 59px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font3{
+    font-size: 59px;
+
+}
+.font4{
+    color: #fd8549;
+
+}
+
+
+/* container 2 */
+ 
+.font5{
+    font-size: 14px;
+}
+
+.font6{
+    color: #fd8549;
+    font-size: 59px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* container 3 */
+
+
+.font7{
+    font-size: 50px;
+}
+.rad{
+    border-radius: 78px;
+}
+
+/* This is the important for image set in same     */
+.img23{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+
+
+
+/* container-4 */
+
+.ima4{
+
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+.font8{
+    color: #fd8549;
+    font-size: 60px;
+
+}
+
+.font9{
+    font-size: 30px;
+
+}
+
+
+
+/* section-3 container -5 */
+
+.f1{
+    color: #fd8549;
+    font-size: 55px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.f2{
+
+    font-size: 20px;
+}
+
+.f3{
+
+    font-size: 19px;
+}
+
+/* section -4 container-6 */
+
+.review{
+    background-image: url("./image/qqq.png");
+    height: 300px;
+    
+    
+}
+
+
+
+
+/* comon */
+
+.image1{
+    border-radius: 25px;
+    
+
+}
+
+
+
+
+.button {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 18em;
+    border-radius: 1000px;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   .button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   .button:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   .button:disabled {
+    cursor: auto;
+    color: grey;
+   }
+
+
+.bocx{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fn{
+    color: #fd8549;
+    font-size: 55px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
