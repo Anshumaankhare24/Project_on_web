@@ -1,0 +1,48 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* top section  */
+.top_bg1{
+    background-color: #faf0d4;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjust if needed */
+}
+
+.hide-button {
+    display: none;
+}
+
+.imagbtnn{
+    font-size: 24px;
+    width: 25%;
+}
+
+/* section 3 card 1 */
+.bg3{
+    background-image: url('./img/img.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+}
+
+.fn1{
+    font-size: 15px;
+    font-weight: bold;
+}
+.fn2{
+    font-size: 11px;
+}
+.fn3{
+    font-size: 13px;
+}
+
+.btn_h{
+    height: 50px;
+}

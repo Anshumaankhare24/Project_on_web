@@ -16,49 +16,51 @@
         <div class="container-fluid d-flex justify-content-center ">
             <div class="row  ">
                 <div class="col ">
-                    <div class="card border-0" style="width: 50rem; height: 35rem;">
+                    <div class="card border-0" style="width: 50rem; height: 42rem;">
                         <div class="card-body">
-                            <div class="row img1 justify-content-center ">
-                                <div class="col-3 img_r_rotated " id="">
-                                    <img src="./images/paper.png" alt="err" class="img-fluid ">
+                            <div class="row img1 justify-content-center  result">
+                                <div class="col-3 img_r_rotated ">
+                                    <p class="fs-2 text-center">ME</p>
+                                    <img src="./images/paper.png" alt="err" class="img-fluid colorimg ">
                                 </div>
                                 <div class="col-3 img_l_rotated ">
-                                    <img src="./images/paper.png" alt="err" class="img-fluid ">
+                                    <p class="fs-2 text-center">Computer</p>
+                                    <img src="./images/paper.png" alt="err" class="img-fluid colorimg">
                                 </div>
                             </div>
                             <div class="row">
                                 <p class="text-center fs1">Let's Play </p>
                             </div>
 
-                            <div class="row pt-4 d-flex justify-content-center grid gap-5 ">
+                            <div class="row pt-4 d-flex justify-content-center grid gap-5  choices">
                                 <div class="col-2">
-                                    <button class="btn imghover ">
-                                        <img src="./images/rock.png" alt="err" class="img-fluid ">
+                                    <button class="btn imghover " onclick="play('rock')">
+                                        <img src="./images/rock.png" alt="err" class="img-fluid colorimg ">
                                         <p class="text-center fs2 pt-2">Rock</p>
-                                    
+
                                     </button>
-                                   
+
                                 </div>
                                 <div class="col-2">
-                                    <button class="btn imghover">
-                                        <img src="./images/paper.png" alt="err" class="img-fluid ">
+                                    <button class="btn imghover" onclick="play('paper')">
+                                        <img src="./images/paper.png" alt="err" class="img-fluid colorimg ">
                                         <p class="text-center fs2 pt-2">Paper</p>
-                                    
+
                                     </button>
-                                   
+
                                 </div>
                                 <div class="col-2">
-                                    <button class="btn imghover ">
-                                        <img src="./images/scissors.png" alt="err" class="img-fluid ">
-                                    <p class="text-center fs2 pt-3">Scissor</p>
-                                
+                                    <button class="btn imghover " onclick="play('scissors')">
+                                        <img src="./images/scissors.png" alt="err" class="img-fluid colorimg ">
+                                        <p class="text-center fs2 pt-3">Scissor</p>
+
                                     </button>
-                                    
+
                                 </div>
                             </div>
-                          
+
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,6 +69,8 @@
 
 
 
+
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
