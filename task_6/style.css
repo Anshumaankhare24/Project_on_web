@@ -42,7 +42,16 @@
 .fn3{
     font-size: 13px;
 }
+.fn4{
+    font-size: 14px;
+    font-weight: bold;
+}
 
 .btn_h{
     height: 50px;
+}
+
+/* section new carousel */
+.bd_shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
