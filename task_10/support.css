@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1 setting */
+h1{
+    color: white;
+    font-size: 40px;
+}
+h2 , h3 , h4 , h5 , h6 , div{
+    color: white;
+}
+
+/* p setting */
+p{
+    color: rgba(255, 255, 255, 0.305);
+    font-size: 15px;
+}
+
+/* button */
+#bttn{
+    background-color: #E50000;
+    padding: 8px 18px;
+    border-radius:5px;
+}
+
+
+.hero img{
+    aspect-ratio: 6/3;
+    object-fit: cover;
+}
+
+
+.arrows{
+    background-color: #0c0c0c;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.starr{
+    color: #E50000;
+    letter-spacing: 2px;
+}
+
+/* jion section */
+.join{
+    background-image: url('assets/support/CTA.png');
+    background-size: cover;
+}

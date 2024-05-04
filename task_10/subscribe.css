@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1 setting */
+h1{
+    color: white;
+    font-size: 40px;
+}
+h2 , h3 , h4 , h5 , h6{
+    color: white;
+}
+
+/* p setting */
+p{
+    color: rgba(255, 255, 255, 0.305);
+    font-size: 15px;
+}
+
+/* button */
+#bttn{
+    background-color: #E50000;
+    padding: 8px 18px;
+    border-radius:5px;
+}
+
+/* plan section */
+.plan table td{
+    color: gray;
+}
+.plan table th{
+    background-color: #413f3f5b;
+    color: white;
+    border: 1px solid #413f3f5b;
+}
+.plan table tr{
+    border: 1px solid #413f3f5b;
+}
+.plan table td{
+    border: 1px solid #413f3f5b;
+    padding: 20px 10px;
+}
+.plan table td{
+    width: 200px;
+    text-align: left;
+ }
+ 
+/* join section */
+.join{
+    background-image: url('assets/home/CTA.png');
+}

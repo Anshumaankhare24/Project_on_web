@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1 setting */
+h1{
+    color: white;
+    font-size: 40px;
+}
+h2 , h3 , h4 , h5 , h6{
+    color: white;
+}
+
+/* p setting */
+p{
+    color: rgba(255, 255, 255, 0.305);
+    font-size: 15px;
+}
+
+/* button */
+#bttn{
+    background-color: #E50000;
+    padding: 8px 18px;
+    border-radius:5px;
+}
+
+/* back section */
+.back{
+    background-image: url('assets/home/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* hero section */
+.hero-content{
+    margin-top: -2%;
+}
+
+/* variety section */
+.variety .box{
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* provide section */
+.provide .card{
+    background: linear-gradient(100deg, #0F0F0F, #0F0F0F);
+ background: linear-gradient(200.52deg, rgba(229, 0, 0, 0.5) -80.03%, rgba(229, 0, 0, 0) 41.32%);
+
+}
+.provide i{
+    background-color: #918c8c25;
+    padding: 10px;
+    color: #E50000;
+    border-radius: 4px;
+}
+
+/* jion section */
+.join{
+    background-image: url('assets/home/CTA.png');
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* h1 setting */
+h1{
+    color: white;
+    font-size: 40px;
+}
+h2 , h3 , h4 , h5 , h6{
+    color: white;
+}
+
+/* p setting */
+p{
+    color: rgba(255, 255, 255, 0.305);
+    font-size: 15px;
+}
+
+/* button */
+#bttn{
+    background-color: #E50000;
+    padding: 8px 18px;
+    border-radius:5px;
+}
+
+
+.hero img{
+    aspect-ratio: 6/3;
+    object-fit: cover;
+}
+
+/* back section */
+.back{
+    background-image: url('assets/home/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* Genres section */
+.Genres .box{
+    background-color: #1A1A1A;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+/* must watch section */
+.Genres .starr{
+    color: #E50000;
+    font-size: 10px;
+}
+.Genres .starrr{
+    font-size: 10px;
+}
+
+/* jion section */
+.join{
+    background-image: url('assets/Movies&Hova/CTA.png');
+    background-size: cover;
+}
