@@ -1,0 +1,180 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* background  */
+.bg1{
+    background-color: black;
+
+}
+
+
+/* section 1  */
+
+@media screen and (max-width: 667px) {
+  .bg2{
+    background-image: url('../image/home/img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+    visibility: hidden;
+  }
+  .iiimg{
+    visibility: visible;
+    /* z-index:11 ; */
+    position: fixed;
+
+  }
+}
+
+@media screen and (max-width: 2080px) {
+  .bg2{
+    background-image: url('../image/home/img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    width: 100%;
+    visibility: visible;
+  }
+
+  .ttt{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position:absolute;
+  }
+
+
+
+  
+.iiimg{
+  visibility: hidden;
+  /* z-index:0 ; */
+  position: fixed;
+}
+}
+
+
+
+.bgcol{
+    background-color: #1C1C21;
+}
+
+/* @media only screen and (max-width: 410px) {
+   
+  }
+
+
+@media only screen and (max-width: 1200px) {
+    
+  } */
+
+/* section 2.0 */
+
+@media only screen and (max-width: 610px) {
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* section 3 */
+
+
+  .accordion-item {
+    background-color: black;
+    color: white;
+  }
+
+  .accordion-button {
+    background-color: black;
+    color: white;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: black;
+    color: white;
+  }
+
+  .accordion-collapse {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+  /* section 4 */
+
+  
+
+
+
+  @media only screen and (max-width: 1080px) {
+ 
+    .img111{
+      height:160px ;
+      width: 900px ;
+    }
+    .bg3{
+      background-color: black;
+    }
+    .card1{
+      width: 25rem;
+    }
+  }
+  
+  
+
+  @media only screen and (max-width: 610px) {
+    .ing{
+     height: 150px;
+     width: 350px;
+     
+    }
+    .bg3{
+      background-color: black;
+
+    }
+    .poss{
+      width: 200px;
+    }
+    .mtt{
+      /* margin-top: 100px; */
+      padding-top: 100px;
+    }
+   
+
+
+ }
+
+
+
+  /* footer  */
+
+  .imgg{
+    height: 150px;
+    width: 150px;
+  }
+
+
+
+  
